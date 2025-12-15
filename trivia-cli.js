@@ -95,23 +95,23 @@ const questions = [
 let currentQuestionIndex = 0;
 let score = 0;
 let timer = null; 
-let timeLeft = 5;
+let timeLeft = 10;
 
 function askQuestion() {
     const q =questions[currentQuestionIndex];
 
     console.log(
-        chalk.bold.blue(`\nQuestion ${currentQuestionIndex +1}: ${q.question}`)
+        chalk.bold.white(`\nQuestion ${currentQuestionIndex +1}: ${q.question}`)
     );
 
     q.answers.forEach((a, i) => {
         console.log(chalk.yellow(`${i + 1}. ${a.text}`));
     });
 
-    timeLeft = 5;
+    timeLeft = 10;
 
     startCountdown();
-    rl.question(chalk.green("\nYour answer (1-4): "), handleAnswer);
+        rl.question(chalk.green("Your answer (1-4): "), handleAnswer);
 }
 
 function startCountdown() {
@@ -175,5 +175,5 @@ function moveToNextQuestion() {
 }
 
 
-console.log(chalk.bgGreen.bold("\n🌿 Welcome to the Herb & Spice Trivia CLI Game!"));
+console.log(chalk.bgGreen.bold("Welcome to the Herb & Spice Trivia CLI Game!"));
 askQuestion();
