@@ -5,7 +5,7 @@ A small Node.js command-line trivia game about herbs, spices, and plants. It ask
 ## Features
 - Interactive CLI quiz with multiple-choice answers
 - 10-second countdown per question
-- Immediate feedback (correct / incorrect) and final score
+- Immediate feedback (correct/incorrect) and final score
 
 ## Running the game
 
@@ -44,3 +44,5 @@ chmod +x trivia-cli.js
 2. Abdulmuhaymin Hassan
 3. Abdulhadi Mohamed
 4. Hashim Hassan
+
+This trivia is for educational purposes only. Answers might not necessarily be correct in real life.
